@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+<!-- 在容器中文件中配置 bean  啥都是bean -->
+<!-- sqpring加载的时候会自动的创建一个bean，并放入内存 
+	UserService userSservice = new UserService();
+	userService.setname("张三三")
+-->
+<bean id="userService" class="com.mrlong.myspring.UserService">
+	<property name="name">
+		<value>张三三</value>
+	</property>
+
+</bean>
+</beans>
