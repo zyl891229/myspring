@@ -15,6 +15,12 @@
 	<property name="name">
 		<value>张三三</value>
 	</property>
+	<!-- 在userservice中引用byeservice bean -->
+	<property name="byeService" ref="byeService" />
+</bean>
 
+<bean id="byeService" class="com.mrlong.myspring.ByeService">
+	<property name="name" value="李四四" />
+	
 </bean>
 </beans>
