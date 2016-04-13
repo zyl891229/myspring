@@ -59,6 +59,11 @@ public class Test {
 		 * 
 		 * 框架的学习就是学习各种配置
 		 * 
+		 * struts充当web层，接管jsp/action/表单
+		 * 主要是出现出mvc的数据输入
+		 * mvc  model层（业务层+dao层+持久层）在一个项目中不一定全都有，
+		 * 
+		 * spring开发提倡接口编程，配合DI技术可以层与层间的解耦
 		 * */
 		
 //		UserService userService = (UserService) aContext.getBean("userService");
