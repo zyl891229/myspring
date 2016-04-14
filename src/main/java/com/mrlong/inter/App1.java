@@ -7,7 +7,7 @@ public class App1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ApplicationContext aContext = new ClassPathXmlApplicationContext("beans.xml");
+		ApplicationContext aContext = new ClassPathXmlApplicationContext("beans_inter.xml");
 //		UpperLetter changeLetter = (UpperLetter) aContext.getBean("changeLette");
 //		System.out.println(changeLetter.change());
 		ChangeLetter changeLetter1 = (ChangeLetter) aContext.getBean("changeLette");

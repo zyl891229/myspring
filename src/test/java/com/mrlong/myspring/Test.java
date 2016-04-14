@@ -64,6 +64,9 @@ public class Test {
 		 * mvc  model层（业务层+dao层+持久层）在一个项目中不一定全都有，
 		 * 
 		 * spring开发提倡接口编程，配合DI技术可以层与层间的解耦
+		 * 
+		 * 配置bean xml 通过反射机制引用上下文 或者bean工厂
+		 * 从ApplicationContext应用上下文中获取bean 和从bean工厂中获取有什么区别
 		 * */
 		
 //		UserService userService = (UserService) aContext.getBean("userService");
