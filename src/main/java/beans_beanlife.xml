@@ -22,6 +22,8 @@
   
 <bean id="personService2" init-method="init"  destroy-method="mydestroy" scope="singleton" class="com.mrlong.beanlife.PersonService">
 	<property name="name" value="xiao hong" />
+		<property name="age" value="123" />
+	
 </bean>
 
 <!-- 配置我们的自己后置处理器(有点类似我们的filter) -->

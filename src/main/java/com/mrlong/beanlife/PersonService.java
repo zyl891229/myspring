@@ -9,8 +9,20 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class PersonService implements BeanNameAware,BeanFactoryAware,ApplicationContextAware,InitializingBean,DisposableBean	 {
 	private String name;
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	private int age;
     public  PersonService() {
 		System.out.println("init构造函数");
 	}
@@ -49,6 +61,8 @@ public class PersonService implements BeanNameAware,BeanFactoryAware,Application
 		// TODO Auto-generated method stub
 		System.out.println("afterPropertiesSet" );
 	}
+	
+//	@
 	public void init() {
 		System.out.println("my init!!!");
 	}
