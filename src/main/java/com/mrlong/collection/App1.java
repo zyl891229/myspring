@@ -53,20 +53,32 @@ public class App1 {
 			System.out.println("key="+entry1.getKey()+"  name="+entry1.getValue().getName());
 		}
 		
-//		System.out.println("*****ͨ��Propertisȡ������*****");
-//		Properties pp=department.getPp();
-//		//System.out.println(pp.get("pp1").toString());
-//		for(Entry<Object,Object> entry:pp.entrySet()){
-//			System.out.println(entry.getKey().toString()+" "+entry.getValue().toString());
+		System.out.println("*****通过Propertis取出数据*****");
+		Properties pp=department.getPp();
+		System.out.println(pp.get("pp1").toString());
+		for(Entry<Object, Object> e:pp.entrySet()){
+			System.out.println(e.getKey().toString()+" "+e.getValue().toString());
+		}
+		
+//		System.out.println("*****通过Propertis  Iterator取出数据*****");
+//
+//		Iterator iterator = pp.keySet().iterator();
+//		while (iterator.hasNext()) {
+//			String key=(String) it.next();
+//			Employee emp=empmaps.get(key);
+//			System.out.println("key="+key+" name="+emp.getName());
+//			
 //		}
-//		System.out.println("*****ͨ��Enumerationȡ��*****");
-//		Enumeration en= pp.keys();
-//		while(en.hasMoreElements()){
-//		//	Entry<Object,Object> elment= (Entry<Object, Object>) en.nextElement();
-//		//	System.out.println(elment.getKey()+" "+elment.getValue());
-//			String key=(String) en.nextElement();
-//			System.out.println(key+" "+pp.getProperty(key));
-//		}
+		
+		
+		System.out.println("*****通过Enumeration取出数据*****");
+		Enumeration en= pp.keys();
+		while(en.hasMoreElements()){
+		//	Entry<Object,Object> elment= (Entry<Object, Object>) en.nextElement();
+		//	System.out.println(elment.getKey()+" "+elment.getValue());
+			String key=(String) en.nextElement();
+			System.out.println(key+" "+pp.getProperty(key));
+		}
 	}
 
 }
