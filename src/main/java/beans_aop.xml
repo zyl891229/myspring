@@ -26,6 +26,7 @@
 <!-- 配置前置通知 -->
 <bean id="MyMethodBeforeAdvice" class="com.mrlong.aop.MyMethodBeforeAdvice" /> 
 
+
 <!-- 配置后置通知 -->
 <bean id="MyAfterReturningAdvice" class="com.mrlong.aop.MyAfterReturningAdvice" /> 
 
@@ -59,6 +60,4 @@
 	<!-- 配置被代理对象,可以指定 -->
 	<property name="target" ref="test1Service"/>
 </bean>
-
-
 </beans>
