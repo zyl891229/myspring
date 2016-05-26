@@ -8,8 +8,13 @@
 				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
 <!-- 配置成singleton开始就实例化一次
 其他的时候不会 -->
+
+	<context:component-scan base-package="com.mrlong.ioc"></context:component-scan>
+
+<!--  
 <bean id="student" scope="prototype" class="com.mrlong.ioc.Student">
 	<property name="name"  value="小狗" />
 </bean>
+-->
 
 </beans>
